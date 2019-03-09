@@ -108,7 +108,7 @@ void Partie::boucleDeVie()
 			tour = 0;
 		}
 
-		Sleep(40);
+		Sleep(20);
 
 		if (Martien::getNombreExtraTerrestre() == 0) {
 			aGagner = true;
@@ -119,12 +119,16 @@ void Partie::boucleDeVie()
 	if (aGagner == true)
 	{
 		system("cls");
-		cout << "!!! YOU WIN !!!" << endl;
+		cout << "	__      _(_)_ __  _ __   ___ _ __  | |" << endl;
+		cout << "	\\ \\ /\\ / / | '_ \\| '_ \\ / _ \\ '__| | |" << endl;
+		cout << "	 \\ V  V /| | | | | | | |  __/ |    |_|" << endl;
+		cout << "	  \\_/\\_/ |_|_| |_|_| |_|\\___|_|    (_)" << endl;
 		system("pause");
 	}
 	if (aPerdu == true) {
 		system("cls");
-		cout << "!!! GAME OVER !!!" << endl;
+		cout << " _ _   |_  _  _| " << endl;
+		cout << "_)(_)  |_)(_|(_|... " << endl;
 		system("pause");
 	}
 
